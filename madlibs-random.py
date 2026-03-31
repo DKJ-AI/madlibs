@@ -22,7 +22,6 @@ if __name__ == "__main__":
     templates.wedding_speech,
     templates.product_launch,
     templates.police_report,
-    templates.fortune_cookie,
     templates.gym_motivation,
     templates.terms_and_conditions
   ]
