@@ -1,11 +1,13 @@
+import streamlit as st
+
 # 1 : Job Interview
 def job_interview():
-    noun = input("Noun: ")
-    verb = input("Verb (-ing): ")
-    adjective = input("Adjective: ")
-    animal = input("Animal: ")
-    past_tense_verb = input("Past Tense Verb: ")
-    plural_noun = input("Plural Noun: ")
+    noun = st.text_input("Noun: ")
+    verb = st.text_input("Verb (-ing): ")
+    adjective = st.text_input("Adjective: ")
+    animal = st.text_input("Animal: ")
+    past_tense_verb = st.text_input("Past Tense Verb: ")
+    plural_noun = st.text_input("Plural Noun: ")
 
     story = (f"""
     Good morning!
@@ -16,17 +18,18 @@ def job_interview():
     I believe I would be a perfect fit for this company.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 2 : Breaking News
 def breaking_news():
-    city = input("City: ")
-    plural_noun = input("Plural Noun: ")
-    adjective = input("Adjective: ")
-    past_tense_verb = input("Past Tense Verb: ")
-    noun = input("Noun: ")
-    number = input("Number: ")
+    city = st.text_input("City: ")
+    plural_noun = st.text_input("Plural Noun: ")
+    adjective = st.text_input("Adjective: ")
+    past_tense_verb = st.text_input("Past Tense Verb: ")
+    noun = st.text_input("Noun: ")
+    number = st.text_input("Number: ")
 
     story = (f"""
     Breaking news from {city} —
@@ -37,17 +40,18 @@ def breaking_news():
     More updates to follow.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 3 : Love Letter
 def love_letter():
-    name = input("Name: ")
-    adjective_1 = input("Adjective: ")
-    noun = input("Noun: ")
-    verb = input("Verb: ")
-    food = input("Food: ")
-    adjective_2 = input("Another Adjective: ")
+    name = st.text_input("Name: ")
+    adjective_1 = st.text_input("Adjective: ")
+    noun = st.text_input("Noun: ")
+    verb = st.text_input("Verb: ")
+    food = st.text_input("Food: ")
+    adjective_2 = st.text_input("Another Adjective: ")
 
     story = (f"""
     Dearest {name},
@@ -57,17 +61,18 @@ def love_letter():
     Yours forever and always.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 4 : Recipe
 def recipe():
-    dish = input("Dish Name: ")
-    number = input("Number (servings): ")
-    weird_ingredient = input("Weird Ingredient: ")
-    verb = input("Verb (cooking action): ")
-    adjective = input("Adjective (texture or appearance): ")
-    kitchen_item = input("Kitchen Item: ")
+    dish = st.text_input("Dish Name: ")
+    number = st.text_input("Number (servings): ")
+    weird_ingredient = st.text_input("Weird Ingredient: ")
+    verb = st.text_input("Verb (cooking action): ")
+    adjective = st.text_input("Adjective (texture or appearance): ")
+    kitchen_item = st.text_input("Kitchen Item: ")
 
     story = (f"""
     Classic {dish} — serves {number}.
@@ -77,18 +82,19 @@ def recipe():
     Enjoy immediately while questioning your life choices.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 5 : Superhero Origin
 def superhero_origin():
-    name = input("Hero Name: ")
-    animal = input("Animal: ")
-    body_part = input("Body Part: ")
-    past_tense_verb = input("Past Tense Verb: ")
-    superpower = input("Superpower: ")
-    villain = input("Villain Name: ")
-    city = input("City: ")
+    name = st.text_input("Hero Name: ")
+    animal = st.text_input("Animal: ")
+    body_part = st.text_input("Body Part: ")
+    past_tense_verb = st.text_input("Past Tense Verb: ")
+    superpower = st.text_input("Superpower: ")
+    villain = st.text_input("Villain Name: ")
+    city = st.text_input("City: ")
 
     story = (f"""
     Nobody suspected that {name} was anything other than an ordinary person —
@@ -98,18 +104,19 @@ def superhero_origin():
     The world will never be the same.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 6 :  Holiday Card
 def holiday_card():
-    name = input("Name: ")
-    adjective_1 = input("Adjective: ")
-    plural_noun = input("Plural Noun: ")
-    verb = input("Verb (-ing): ")
-    adjective_2 = input("Another Adjective: ")
-    food = input("Food: ")
-    number = input("Year (number): ")
+    name = st.text_input("Name: ")
+    adjective_1 = st.text_input("Adjective: ")
+    plural_noun = st.text_input("Plural Noun: ")
+    verb = st.text_input("Verb (-ing): ")
+    adjective_2 = st.text_input("Another Adjective: ")
+    food = st.text_input("Food: ")
+    number = st.text_input("Year (number): ")
 
     story = (f"""
     Dear {name},
@@ -121,18 +128,19 @@ def holiday_card():
     Warmly.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 7 :  Doctor Visit
 def doctor_visit():
-    body_part_1 = input("Body Part: ")
-    adjective_1 = input("Adjective: ")
-    verb = input("Verb (-ing): ")
-    body_part_2 = input("Another Body Part: ")
-    number = input("Number: ")
-    adjective_2 = input("Another Adjective: ")
-    food = input("Food: ")
+    body_part_1 = st.text_input("Body Part: ")
+    adjective_1 = st.text_input("Adjective: ")
+    verb = st.text_input("Verb (-ing): ")
+    body_part_2 = st.text_input("Another Body Part: ")
+    number = st.text_input("Number: ")
+    adjective_2 = st.text_input("Another Adjective: ")
+    food = st.text_input("Food: ")
 
     story = (f"""
     Doctor, my {body_part_1} has been feeling extremely {adjective_1} for the past week.
@@ -142,19 +150,20 @@ def doctor_visit():
     Please help me.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 8 : Bedtime Story
 def bedtime_story():
-    character = input("Character Name: ")
-    adjective_1 = input("Adjective: ")
-    place = input("Place: ")
-    animal = input("Animal: ")
-    verb_past = input("Past Tense Verb: ")
-    noun = input("Noun: ")
-    adjective_2 = input("Another Adjective: ")
-    emotion = input("Emotion: ")
+    character = st.text_input("Character Name: ")
+    adjective_1 = st.text_input("Adjective: ")
+    place = st.text_input("Place: ")
+    animal = st.text_input("Animal: ")
+    verb_past = st.text_input("Past Tense Verb: ")
+    noun = st.text_input("Noun: ")
+    adjective_2 = st.text_input("Another Adjective: ")
+    emotion = st.text_input("Emotion: ")
 
     story = (f"""
     Once upon a time, there was a {adjective_1} little {character} who lived in {place}.
@@ -165,19 +174,20 @@ def bedtime_story():
     And they lived {adjective_2} ever after. The end.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 9 :  Weather Forecast
 def weather_forecast():
-    city = input("City: ")
-    adjective_1 = input("Adjective: ")
-    noun_1 = input("Noun: ")
-    number_1 = input("Number (temperature): ")
-    verb = input("Verb (-ing): ")
-    plural_noun = input("Plural Noun: ")
-    adjective_2 = input("Another Adjective: ")
-    number_2 = input("Another Number: ")
+    city = st.text_input("City: ")
+    adjective_1 = st.text_input("Adjective: ")
+    noun_1 = st.text_input("Noun: ")
+    number_1 = st.text_input("Number (temperature): ")
+    verb = st.text_input("Verb (-ing): ")
+    plural_noun = st.text_input("Plural Noun: ")
+    adjective_2 = st.text_input("Another Adjective: ")
+    number_2 = st.text_input("Another Number: ")
 
     story = (f"""
     Good evening and welcome to the {city} weather report.
@@ -188,18 +198,19 @@ def weather_forecast():
     Stay safe out there.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 10 : Apology Letter
 def apology_letter():
-    name = input("Name: ")
-    noun_1 = input("Noun: ")
-    past_tense_verb = input("Past Tense Verb: ")
-    adjective_1 = input("Adjective: ")
-    place = input("Place: ")
-    noun_2 = input("Another Noun: ")
-    adjective_2 = input("Another Adjective: ")
+    name = st.text_input("Name: ")
+    noun_1 = st.text_input("Noun: ")
+    past_tense_verb = st.text_input("Past Tense Verb: ")
+    adjective_1 = st.text_input("Adjective: ")
+    place = st.text_input("Place: ")
+    noun_2 = st.text_input("Another Noun: ")
+    adjective_2 = st.text_input("Another Adjective: ")
 
     story = (f"""
     Dear {name},
@@ -211,19 +222,20 @@ def apology_letter():
     Deeply sorry.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 11 : Science Experiment
 def science_experiment():
-    scientist = input("Scientist Name: ")
-    adjective_1 = input("Adjective: ")
-    noun_1 = input("Noun: ")
-    liquid = input("Liquid: ")
-    number = input("Number: ")
-    verb_past = input("Past Tense Verb: ")
-    adjective_2 = input("Another Adjective: ")
-    noun_2 = input("Another Noun: ")
+    scientist = st.text_input("Scientist Name: ")
+    adjective_1 = st.text_input("Adjective: ")
+    noun_1 = st.text_input("Noun: ")
+    liquid = st.text_input("Liquid: ")
+    number = st.text_input("Number: ")
+    verb_past = st.text_input("Past Tense Verb: ")
+    adjective_2 = st.text_input("Another Adjective: ")
+    noun_2 = st.text_input("Another Noun: ")
 
     story = (f"""
     Dr. {scientist} had been working on the experiment for years.
@@ -234,19 +246,20 @@ def science_experiment():
     Science would never be the same.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 12 : School Report Card
 def school_report_card():
-    student = input("Student Name: ")
-    adjective_1 = input("Adjective: ")
-    subject = input("School Subject: ")
-    verb = input("Verb (-ing): ")
-    adjective_2 = input("Another Adjective: ")
-    noun = input("Noun: ")
-    adjective_3 = input("One More Adjective: ")
-    number = input("Number (grade): ")
+    student = st.text_input("Student Name: ")
+    adjective_1 = st.text_input("Adjective: ")
+    subject = st.text_input("School Subject: ")
+    verb = st.text_input("Verb (-ing): ")
+    adjective_2 = st.text_input("Another Adjective: ")
+    noun = st.text_input("Noun: ")
+    adjective_3 = st.text_input("One More Adjective: ")
+    number = st.text_input("Number (grade): ")
 
     story = (f"""
     Student: {student}
@@ -261,19 +274,20 @@ def school_report_card():
     — The Faculty
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 13 : Travel Review
 def travel_review():
-    place = input("Place / Hotel Name: ")
-    adjective_1 = input("Adjective: ")
-    noun_1 = input("Noun: ")
-    past_tense_verb = input("Past Tense Verb: ")
-    adjective_2 = input("Another Adjective: ")
-    food = input("Food: ")
-    number = input("Star Rating (1-5): ")
-    noun_2 = input("Another Noun: ")
+    place = st.text_input("Place / Hotel Name: ")
+    adjective_1 = st.text_input("Adjective: ")
+    noun_1 = st.text_input("Noun: ")
+    past_tense_verb = st.text_input("Past Tense Verb: ")
+    adjective_2 = st.text_input("Another Adjective: ")
+    food = st.text_input("Food: ")
+    number = st.text_input("Star Rating (1-5): ")
+    noun_2 = st.text_input("Another Noun: ")
 
     story = (f"""
     Review of {place} — {number}/5 stars.
@@ -285,19 +299,20 @@ def travel_review():
     Would I return? Only if my life depended on it.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 14 : Villain Monologue
 def villain_monologue():
-    villain_name = input("Villain Name: ")
-    adjective_1 = input("Adjective: ")
-    plural_noun_1 = input("Plural Noun: ")
-    verb = input("Verb (e.g. destroy, melt, consume): ")
-    place = input("Place: ")
-    adjective_2 = input("Another Adjective: ")
-    plural_noun_2 = input("Another Plural Noun: ")
-    number = input("Number: ")
+    villain_name = st.text_input("Villain Name: ")
+    adjective_1 = st.text_input("Adjective: ")
+    plural_noun_1 = st.text_input("Plural Noun: ")
+    verb = st.text_input("Verb (e.g. destroy, melt, consume): ")
+    place = st.text_input("Place: ")
+    adjective_2 = st.text_input("Another Adjective: ")
+    plural_noun_2 = st.text_input("Another Plural Noun: ")
+    number = st.text_input("Number: ")
 
     story = (f"""
     Ah, you've finally arrived. How {adjective_1} of you.
@@ -308,20 +323,21 @@ def villain_monologue():
     Muahahaha.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 15 : Wedding Speech
 def wedding_speech():
-    speaker = input("Speaker Name: ")
-    couple_1 = input("Partner 1 Name: ")
-    couple_2 = input("Partner 2 Name: ")
-    adjective_1 = input("Adjective: ")
-    verb_past = input("Past Tense Verb: ")
-    place = input("Place: ")
-    noun = input("Noun: ")
-    adjective_2 = input("Another Adjective: ")
-    food = input("Food: ")
+    speaker = st.text_input("Speaker Name: ")
+    couple_1 = st.text_input("Partner 1 Name: ")
+    couple_2 = st.text_input("Partner 2 Name: ")
+    adjective_1 = st.text_input("Adjective: ")
+    verb_past = st.text_input("Past Tense Verb: ")
+    place = st.text_input("Place: ")
+    noun = st.text_input("Noun: ")
+    adjective_2 = st.text_input("Another Adjective: ")
+    food = st.text_input("Food: ")
 
     story = (f"""
     Hi everyone, my name is {speaker} and I've known {couple_1} for years.
@@ -332,19 +348,20 @@ def wedding_speech():
     Cheers!
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 16 : Product Launch,
 def product_launch():
-    product_name = input("Product Name: ")
-    adjective_1 = input("Adjective: ")
-    verb_1 = input("Verb (-ing): ")
-    noun_1 = input("Noun: ")
-    number = input("Number: ")
-    adjective_2 = input("Another Adjective: ")
-    verb_2 = input("Another Verb: ")
-    noun_2 = input("Another Noun: ")
+    product_name = st.text_input("Product Name: ")
+    adjective_1 = st.text_input("Adjective: ")
+    verb_1 = st.text_input("Verb (-ing): ")
+    noun_1 = st.text_input("Noun: ")
+    number = st.text_input("Number: ")
+    adjective_2 = st.text_input("Another Adjective: ")
+    verb_2 = st.text_input("Another Verb: ")
+    noun_2 = st.text_input("Another Noun: ")
 
     story = (f"""
     Introducing {product_name} — the most {adjective_1} innovation of our generation.
@@ -355,19 +372,20 @@ def product_launch():
     Available now. Your life will never be the same.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
 # 17 : Police Report
 def police_report():
-    officer = input("Officer Name: ")
-    noun_1 = input("Noun: ")
-    adjective_1 = input("Adjective: ")
-    verb_past = input("Past Tense Verb: ")
-    place = input("Place: ")
-    number = input("Number: ")
-    noun_2 = input("Another Noun: ")
-    adjective_2 = input("Another Adjective: ")
+    officer = st.text_input("Officer Name: ")
+    noun_1 = st.text_input("Noun: ")
+    adjective_1 = st.text_input("Adjective: ")
+    verb_past = st.text_input("Past Tense Verb: ")
+    place = st.text_input("Place: ")
+    number = st.text_input("Number: ")
+    noun_2 = st.text_input("Another Noun: ")
+    adjective_2 = st.text_input("Another Adjective: ")
 
     story = (f"""
     Incident Report — Officer {officer} reporting.
@@ -378,41 +396,20 @@ def police_report():
     Investigation is ongoing. Further details to follow.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
 
-# 18 : Fortune Cookie
-def fortune_cookie():
-    adjective_1 = input("Adjective: ")
-    noun_1 = input("Noun: ")
-    verb = input("Verb: ")
-    number = input("Number: ")
-    noun_2 = input("Another Noun: ")
-    adjective_2 = input("Another Adjective: ")
-
-    story = (f"""
-    Your fortune:
-
-    A {adjective_1} {noun_1} is headed your way.
-    The wisest path is to {verb} before the {number}th day of the month.
-    Remember: even the most {adjective_2} {noun_2} began as a single step.
-
-    Lucky numbers: {number}, {number*2 if number.isdigit() else '??'}, {number*3 if number.isdigit() else '??'}
-    """)
-
-    print(story)
-
-
-# 19 : Gym Motivation
+# 18 : Gym Motivation
 def gym_motivation():
-    name = input("Name: ")
-    body_part = input("Body Part: ")
-    adjective_1 = input("Adjective: ")
-    number_1 = input("Number (reps): ")
-    verb = input("Verb (-ing): ")
-    food = input("Food: ")
-    adjective_2 = input("Another Adjective: ")
-    number_2 = input("Number (days): ")
+    name = st.text_input("Name: ")
+    body_part = st.text_input("Body Part: ")
+    adjective_1 = st.text_input("Adjective: ")
+    number_1 = st.text_input("Number (reps): ")
+    verb = st.text_input("Verb (-ing): ")
+    food = st.text_input("Food: ")
+    adjective_2 = st.text_input("Another Adjective: ")
+    number_2 = st.text_input("Number (days): ")
 
     story = (f"""
     Listen up, {name}!
@@ -423,18 +420,19 @@ def gym_motivation():
     Now move. Let's go!
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
 
-# 20 : Terms & Conditions
+# 19 : Terms & Conditions
 def terms_and_conditions():
-    company = input("Company Name: ")
-    noun_1 = input("Noun: ")
-    adjective_1 = input("Adjective: ")
-    number = input("Number: ")
-    verb = input("Verb: ")
-    noun_2 = input("Another Noun: ")
-    adjective_2 = input("Another Adjective: ")
-    place = input("Place: ")
+    company = st.text_input("Company Name: ")
+    noun_1 = st.text_input("Noun: ")
+    adjective_1 = st.text_input("Adjective: ")
+    number = st.text_input("Number: ")
+    verb = st.text_input("Verb: ")
+    noun_2 = st.text_input("Another Noun: ")
+    adjective_2 = st.text_input("Another Adjective: ")
+    place = st.text_input("Place: ")
 
     story = (f"""
     TERMS AND CONDITIONS — {company}
@@ -446,4 +444,5 @@ def terms_and_conditions():
     By continuing, you confirm you have not read any of this.
     """)
 
-    print(story)
+    if st.button("Check"):
+        st.write(story)
